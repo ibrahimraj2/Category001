@@ -32,9 +32,23 @@
       padding-top: 47px;
 }
 
+/* animation */
+.animation{ animation: animation .4s; animation-iteration-count: infinite }
+@keyframes animation {
+    0%, 33%, 100% {
+        transform-origin: bottom;
+        animation-timing-function: cubic-bezier(.17,.67,.79,1.83)
+    }
+    33% { transform: translateY(-2px) rotate(-3deg) }
+    66% { transform: translateY(2px) rotate(3deg) }
+}
 
 
 
+/* category section */
+.card-bg{
+      background: #F9DF8A;
+}
 
 
 
